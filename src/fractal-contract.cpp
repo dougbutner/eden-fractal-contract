@@ -14,7 +14,7 @@ using namespace eden_fractal::errors;
 namespace {
 
     // Some compile-time configuration
-    const vector<name> admins{"dan"_n, "jseymour.gm"_n, "chkmacdonald"_n, "james.vr"_n, "vladislav.x"_n};
+    const vector<name> admins{"aqua"_n, "jseymour.gm"_n, "chkmacdonald"_n, "james.vr"_n, "vladislav.x"_n};
 
     constexpr int64_t max_supply = static_cast<int64_t>(1'000'000'000e4);
 
@@ -384,10 +384,6 @@ EOSIO_ABIGEN(actions(eden_fractal::actions),
 
     table("consenzus"_n, eden_fractal::Consenzus),
     table("electioninf"_n, eden_fractal::ElectionInf),
-
-
-
-
 
 
     ricardian_clause("Fractal contract ricardian clause", eden_fractal::ricardian_clause)
